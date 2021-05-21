@@ -56,6 +56,20 @@ namespace Rema1000.API.Controllers
             return product;
         }
 
+        // GET: api/Products/Sup/5
+        [HttpGet("sup/{id}")]
+        public async Task<ActionResult<IEnumerable<Product>>> GetProductBySupplier(int id)
+        {
+            var product = await _context.Products.Where(c => c.SupplierId == id).ToListAsync();
+
+            if (product == null)
+            {
+                return NotFound();
+            }
+
+            return product;
+        }
+
         // PUT: api/Products/5
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPut("{id}")]

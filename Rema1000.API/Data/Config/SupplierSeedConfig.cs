@@ -17,19 +17,37 @@ namespace Rema1000.API.Data.Config
                 {
                     Id = 1,
                     Name = "Arla",
-                    Desc = "Arla mejeri produkter og produktion."
+                    Desc = "Arla mejeri produkter og produktion.",
+                    
+                    ContactPerson = "Kim Larsen",
+                    Address = "Slagelsevej 31",
+                    Email = "kl@arla.dk",
+                    PhoneNumber = 31557522,
+                    PostalCode = 4200
                 },
                 new Supplier
                 {
                     Id = 2,
                     Name = "Schulstad",
-                    Desc = "Brød, brød og brød."
+                    Desc = "Brød, brød og brød.",
+
+                    ContactPerson = "Lars Torsten",
+                    Address = "Horsensvej 22",
+                    Email = "lt@schulstad.dk",
+                    PhoneNumber = 54213244,
+                    PostalCode = 7100
                 },
                 new Supplier
                 {
                     Id = 3,
                     Name = "Royal Unibrew",
-                    Desc = "Produktion af Sodavand, øl og andre læskedrikke."
+                    Desc = "Produktion af Sodavand, øl og andre læskedrikke.",
+
+                    ContactPerson = "Frederik Jensen",
+                    Address = "Faxevej",
+                    Email = "fj@royalunibrew.dk",
+                    PhoneNumber = 61732233,
+                    PostalCode = 2200
                 }
             );
         }
